@@ -1,0 +1,423 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Roboto:wght@500&display=swap");
+
+nav a {
+  color: #396E94;
+  font-size: 1.1em;
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Rajdhani";
+  color: #ba181b;
+  font-size: 32px;
+}
+
+p,
+form {
+  font-family: "Lato";
+  color: #b1a7a6;
+}
+
+#content {
+  margin: 0 auto;
+  background-color: #161a1d;
+  z-index: -5;
+  max-width: 90%;
+}
+
+/* --------------------------CSS HEADER GRID START ------------------------------ */
+header {
+  display: grid;
+  grid-template-columns: 15% auto;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align:center;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+}
+
+nav a:hover {
+  color: red;
+  text-decoration: none;
+  background-color: #264653;
+}
+/* -----------------CSS HEADER GRID END --------------------- */
+
+/* -----------------CSS FOTER GRID START --------------------- */
+footer {
+  display: grid;
+  grid-template-columns: 100px auto 42px 42px 42px;
+  height: 55px;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+/* -----------------CSS FOOTER GRID START --------------------- */
+
+/* -----------------CSS HOME GRID START --------------------- */
+.home-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+}
+
+.home-headline-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  margin-bottom: -10px;
+  font-size: 4em;
+}
+
+.home-paragraph-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.home-paragraph-2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.home-image-1 {
+  grid-column: 1/2;
+  grid-row: 4/6;
+  z-index: 0;
+}
+
+.home-headline-2 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  text-align: center;
+  margin-bottom: -10px;
+  font-size: 7em;
+  z-index: 1;
+}
+
+.home-paragraph-3 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  text-align: center;
+  margin-bottom: 75px;
+}
+/* -----------------CSS HOME GRID END --------------------- */
+
+/* -----------------CSS LINK GRID START --------------------- */
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.imperium-link {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.chaos-link {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.xenos-link {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+p.link-titles {
+  text-align: center;
+}
+/* -----------------CSS LINK GRID END --------------------- */
+
+/* -----------------CSS IMPERIAL GRID START --------------------- */
+.imperial-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10% 400px 1fr 10%;
+  grid-template-rows: auto auto 50px auto auto auto 50px auto auto auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.imperial-headline-1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+.imperial-paragraph-1 {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.marine-image {
+  grid-column: 2/3;
+  grid-row: 4/7;
+}
+
+.marine-headline {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.marine-sub-headline {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  text-align: center;
+  font-size: 2em;
+}
+
+.marine-paragraph {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.sisters-image {
+  grid-column: 2/3;
+  grid-row: 8/11;
+}
+
+.sisters-headline {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.sisters-sub-headline {
+  grid-column: 3/4;
+  grid-row: 9/10;
+  text-align: center;
+  font-size: 2em;
+}
+
+.sisters-paragraph {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  text-align: center;
+  margin-top: -50px;
+}
+/* -----------------CSS IMPERIAL GRID END --------------------- */
+
+
+
+
+
+/* -----------------CSS CHAOS GRID START --------------------- */
+
+
+.chaos-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10% 400px 1fr 10%;
+  grid-template-rows: auto auto 50px auto auto auto 50px auto auto auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.chaos-headline-1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+.chaos-paragraph-1 {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.thousand-sons-image {
+  grid-column: 2/3;
+  grid-row: 4/7;
+}
+
+.thousand-sons-headline {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.thousand-sons-sub-headline {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  text-align: center;
+  font-size: 2em;
+}
+
+.thousand-sons-paragraph {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.black-legion-image {
+  grid-column: 2/3;
+  grid-row: 8/11;
+}
+
+.black-legion-headline {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.black-legion-sub-headline {
+  grid-column: 3/4;
+  grid-row: 9/10;
+  text-align: center;
+  font-size: 2em;
+}
+
+.black-legion-paragraph {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  text-align: center;
+  margin-top: -50px;
+}
+/* -----------------CSS CHAOS GRID END --------------------- */
+
+
+
+/* -----------------CSS XENOS GRID START --------------------- */
+
+.xenos-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10% 400px 1fr 10%;
+  grid-template-rows: auto auto 50px auto auto auto 50px auto auto auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.xenos-headline-1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+.xenos-paragraph-1 {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.tau-image {
+  grid-column: 2/3;
+  grid-row: 4/7;
+}
+
+.tau-headline {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.tau-sub-headline {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  text-align: center;
+  font-size: 2em;
+}
+
+.tau-paragraph {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.necrons-image {
+  grid-column: 2/3;
+  grid-row: 8/11;
+}
+
+.necrons-headline {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  text-align: center;
+  margin-bottom: -40px;
+  font-size: 3em;
+}
+
+.necrons-sub-headline {
+  grid-column: 3/4;
+  grid-row: 9/10;
+  text-align: center;
+  font-size: 2em;
+}
+
+.necrons-paragraph {
+  grid-column: 3/4;
+  grid-row: 10/11;
+  text-align: center;
+  margin-top: -50px;
+}
+
+/* -----------------CSS XENOS GRID END --------------------- */
+
+
+
+/* -----------------CSS FORM GRID START --------------------- */
+.form-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/* -----------------CSS FORM GRID END --------------------- */
